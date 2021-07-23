@@ -82,7 +82,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="IMG-5703 (1)"/>
                                 <connections>
-                                    <segue destination="7qb-fW-qtu" kind="show" id="dwK-q6-GjN"/>
+                                    <segue destination="7qb-fW-qtu" kind="presentation" modalPresentationStyle="fullScreen" id="SvO-qy-0zJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgT-gW-A9B">
@@ -91,6 +91,17 @@
                                 <state key="normal" title="Button" image="IMG-5704 (1)"/>
                                 <connections>
                                     <segue destination="gjK-jw-pAe" kind="presentation" modalPresentationStyle="fullScreen" id="p6N-Xy-cGZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBF-Xk-l5U">
+                                <rect key="frame" x="27" y="832" width="30" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="←">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="kWX-Vh-ta6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -415,7 +426,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="back!"/>
                             <connections>
-                                <segue destination="7pJ-9Y-H4s" kind="show" id="JX1-ne-5TO"/>
+                                <segue destination="7pJ-9Y-H4s" kind="presentation" modalPresentationStyle="fullScreen" id="JX1-ne-5TO"/>
                             </connections>
                         </button>
                         <prototypes>
@@ -437,13 +448,14 @@
                     <navigationItem key="navigationItem" title="TO DO LIST" id="B9E-rX-IUP">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gJF-yS-oTq">
                             <connections>
-                                <segue destination="MJB-En-EwG" kind="show" id="rea-1v-Etj"/>
+                                <segue destination="MJB-En-EwG" kind="presentation" modalPresentationStyle="fullScreen" id="rea-1v-Etj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="uMm-vN-Eau" kind="show" identifier="moveToComplete" id="dNA-fI-WN1"/>
+                        <segue destination="uMm-vN-Eau" kind="presentation" identifier="moveToComplete" modalPresentationStyle="fullScreen" id="dNA-fI-WN1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijf-px-s9T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -576,8 +588,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dNA-fI-WN1"/>
-        <segue reference="hhZ-cJ-mCn"/>
+        <segue reference="zTX-iK-aiJ"/>
         <segue reference="p6N-Xy-cGZ"/>
         <segue reference="JX1-ne-5TO"/>
     </inferredMetricsTieBreakers>

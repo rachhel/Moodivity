@@ -9,10 +9,10 @@ import UIKit
 
 class ToDoTableViewController: UITableViewController {
     var toDos : [ToDo] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBar.isHidden = false;
         toDos = createToDos ()
         
     }
